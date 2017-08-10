@@ -851,6 +851,19 @@ if ( ! function_exists( 'storefront_homepage_content' ) ) {
 	}
 }
 
+if ( ! function_exists( 'storefront_homepage_content2' ) ) {
+	/**
+	 * Display homepage content
+	 * Hooked into the `homepage` action in the homepage template
+	 *
+	 * @since  1.0.0
+	 * @return  void
+	 */
+	function storefront_homepage_content2() {
+            echo do_shortcode("[metaslider id=46]");
+	}
+}
+
 if ( ! function_exists( 'storefront_social_icons' ) ) {
 	/**
 	 * Display social icons
