@@ -1,0 +1,44 @@
+
+.page-template-template-homepage:not(.has-post-thumbnail) .site-main {
+    padding-top: 0;
+}
+
+@media screen and (min-width: 768px){
+    
+    .site-header {
+        width: 25%;
+        float: left;
+    }
+    .header-top {
+        width: 100%;
+        float: left;
+    }
+    .header-top-cart, .header-top-search {
+        width: 50%;
+        float: left;
+    }
+    .storefront-primary-navigation {
+        margin: 0;
+        padding: 0;
+    }
+    .main-navigation ul.menu>li:first-child, .main-navigation ul.nav-menu>li:first-child {
+        margin: 0;
+    }
+    .main-navigation ul li, .secondary-navigation ul li {
+        display: block;
+    }
+    .main-navigation ul.menu>li>a, .main-navigation ul.nav-menu>li>a {
+        padding: 10px;
+    }
+    .main-navigation ul ul, .secondary-navigation ul ul {
+        position: relative;
+        left: 0;
+    }
+    .main-navigation ul.menu ul.sub-menu {
+        background: #fff;
+    }
+    .site-content {
+        width: 75%;
+        float: left;
+    }
+}

@@ -16,6 +16,9 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
+
+<link rel='stylesheet' id='storefront-style-custom-css'  href='<?php echo get_template_directory_uri() . '/custom.css?'.time();?>' type='text/css' media='all' />
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -57,11 +60,19 @@
 
 	<div id="content" class="site-content" tabindex="-1">
 		<div class="col-full">
-
+                    <div class="header-top">
+                        <div class="header-top-search">
+                            <?php do_action( 'storefront_header_search' ); ?>
+                        </div>
+                        <div class="header-top-cart">
+                            <?php do_action( 'storefront_header_cart' ); ?>
+                        </div>
+                    </div>
+                    
 		<?php
 		/**
 		 * Functions hooked in to storefront_content_top
 		 *
 		 * @hooked woocommerce_breadcrumb - 10
 		 */
-		do_action( 'storefront_content_top' );
+//		do_action( 'storefront_content_top' );
